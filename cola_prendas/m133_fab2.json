@@ -1,0 +1,202 @@
+{
+ "prenda": "m133",
+ "modo": "argv",
+ "script": "prendas/m133/sim_e2s_R24.py",
+ "receta": "receta_hq.json",
+ "entorno": {
+  "M133_E2": "{salida}/"
+ },
+ "hilos": 4,
+ "dumps": [
+  1,
+  2,
+  6,
+  12,
+  20,
+  40,
+  60,
+  80
+ ],
+ "grupos": {
+  "fw70": {
+   "params": {
+    "relleno": "0",
+    "cq_fin": "5",
+    "rk": "rk_r24.npz",
+    "rk_f0": "2",
+    "rk_df": "1",
+    "mesh": "m133_fab2_fw70.json"
+   },
+   "entorno": {
+    "M133_E2": "{salida}/",
+    "M133_FORRO": "_qc_HP/forro_HP_fw70.json"
+   }
+  },
+  "fw75": {
+   "params": {
+    "relleno": "0",
+    "cq_fin": "5",
+    "rk": "rk_r24.npz",
+    "rk_f0": "2",
+    "rk_df": "1",
+    "mesh": "m133_fab2_fw75.json"
+   },
+   "entorno": {
+    "M133_E2": "{salida}/",
+    "M133_FORRO": "_qc_HP/forro_HP_fw75.json"
+   }
+  }
+ },
+ "nombre": "m133_fab2",
+ "tmo_min": 120,
+ "nf": 80,
+ "medir": {
+  "script": "prendas/m133/medir/medir_m133.py",
+  "cuadros": [
+   80
+  ]
+ },
+ "nota": "[S·3490] FAB4 hood back on the head at the V0 (mk_v0_FAB.py: hood rotated about the head center, mouth to the forehead; fw70 = 25.5 deg, fw75 = 23.7 deg; c1=0 rampa=120 arap 4x100 lam 0.02). Same bp recipe and bi_k 1.000-1.004 as m133_cap2 (N=5 per group), nf 80. Measured against cap2 bp: visor-nose, visor-eye, hood box, seams.",
+ "variantes": [
+  {
+   "tag": "fab2_fw70_0",
+   "grupo": "fw70",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.000"
+   }
+  },
+  {
+   "tag": "fab2_fw70_1",
+   "grupo": "fw70",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.001"
+   }
+  },
+  {
+   "tag": "fab2_fw70_2",
+   "grupo": "fw70",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.002"
+   }
+  },
+  {
+   "tag": "fab2_fw70_3",
+   "grupo": "fw70",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.003"
+   }
+  },
+  {
+   "tag": "fab2_fw70_4",
+   "grupo": "fw70",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.004"
+   }
+  },
+  {
+   "tag": "fab2_fw75_0",
+   "grupo": "fw75",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.000"
+   }
+  },
+  {
+   "tag": "fab2_fw75_1",
+   "grupo": "fw75",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.001"
+   }
+  },
+  {
+   "tag": "fab2_fw75_2",
+   "grupo": "fw75",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.002"
+   }
+  },
+  {
+   "tag": "fab2_fw75_3",
+   "grupo": "fw75",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.003"
+   }
+  },
+  {
+   "tag": "fab2_fw75_4",
+   "grupo": "fw75",
+   "params": {
+    "bvp_w": "10",
+    "ruedo_vivo": "30",
+    "ruedo_vivo_relleno": "0",
+    "tp_sep": "4.5",
+    "fa_acb": "20",
+    "fa_acb_cf": "18.5",
+    "fa_acb_cf1": "32",
+    "bi_k": "1.004"
+   }
+  }
+ ]
+}
